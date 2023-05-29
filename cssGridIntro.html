@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+
+        .container {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            column-gap: 25px;
+            row-gap: 100px;
+        }
+
+        /* 0-600px */
+        @media only screen and (max-width: 600px) {
+            .container {
+                display: grid;
+                grid-template-columns: auto;
+                column-gap: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div style="grid-column: 1 / 4; " class="box">box - 1</div>
+        <div class="box">box - 2</div>
+        <div class="box">box - 3</div>
+        <div class="box">box - 4</div>
+        <div class="box">box - 5</div>
+        <div class="box">box - 6</div>
+        <div class="box">box - 7</div>
+        <div class="box">box - 8</div>
+        <div class="box">box - 9</div>
+        <div class="box">box - 10</div>
+        <div class="box">box - 11</div>
+        <div class="box">box - 12</div>
+
+    </div>
+
+</body>
+
+</html>
